@@ -16,7 +16,7 @@ body {
   width: 100%;
   padding: 2%;
   box-sizing: border-box;
-  font-family: 'Courier New', monospace;
+  font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -29,12 +29,19 @@ body {
   margin: 0;
   padding: 0; 
 }
+
 /*nav link*/
 .nav-link {
   display: block;
   color: #fff;
+  text-decoration: dotted;
   font-size: 3vw;
   margin: 0 15px;
+}
+
+/*nav hover stripe*/
+.nav-link:hover{
+  text-decoration: underline;
 }
 
 /*nav for phone*/
@@ -66,8 +73,13 @@ body {
 /*footer link*/
 .footer a {
   color: rgb(255, 255, 255);
-  text-decoration: none;
+  text-decoration: dotted;
   display: block;
-  font-family: 'Courier New', monospace;
+  font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   margin: 0 5px;
+}
+
+/*footer hover stripe*/
+.footer a:hover{
+  text-decoration: underline;
 }
