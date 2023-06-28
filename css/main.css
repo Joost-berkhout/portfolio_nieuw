@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  background: rgb(111, 111, 111);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(108, 118, 28);
+  padding: 1%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: block;
+  font-family: 'Courier New', monospace;
+  margin: 0 5px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  max-width: 50px;
+  height: auto;
+}
+
+.navbar {
+  background-color: #6c761c;
+  width: 100%;
+  padding: 2%;
+  box-sizing: border-box;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0; /* Added this to remove the default padding */
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 3vw;
+  margin: 0 15px;
+}
+
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .nav-link {
+    font-size: 4.5vw;
+    text-align: center;
+  }
+}
