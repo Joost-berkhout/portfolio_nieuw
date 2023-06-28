@@ -9,19 +9,7 @@
 <nav class="navbar">
     <div class="logo-container">
         <?php
-        // Database configuration
-        $dbHost     = "localhost";
-        $dbUsername = "root";
-        $dbPassword = "";
-        $dbName     = "db-portfolio(nieuw)";
-
-        // Create database connection
-        $db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-
-        // Check connection
-        if ($db->connect_error) {
-            die("Connection failed: " . $db->connect_error);
-        }
+        include_once '../php/database/database.php';
 
         // Retrieve image data from the database
         $query = "SELECT img FROM img WHERE id = 1";

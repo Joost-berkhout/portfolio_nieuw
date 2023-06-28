@@ -1,21 +1,9 @@
 <?php
-// Database configuration
-$dbHost     = "localhost";
-$dbUsername = "root";
-$dbPassword = "";
-$dbName     = "db-portfolio(nieuw)";
-
-// Create database connection
-$db = new mysqli($dbHost, $dbUsername, $dbPassword, $dbName);
-
-// Check connection
-if ($db->connect_error) {
-    die("Connection failed: " . $db->connect_error);
-}
+include_once '../database/database.php';
 
 // Handle file upload
-if (isset($_FILES['image']) && isset($_POST['naam'])) {
-    $image = $_FILES['image']['tmp_name'];
+if (isset($_FILES['img']) && isset($_POST['naam'])) {
+    $image = $_FILES['img']['tmp_name'];
     $naam = $_POST['naam'];
 
     // Check if the file is an image
