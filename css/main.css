@@ -10,7 +10,7 @@ body {
   height: auto;
 }
 
-/*nav color and size*/
+/*nav color, size and alignment*/
 .navbar {
   background-color: #6c761c;
   width: 100%;
@@ -20,13 +20,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  left: 0;
-  z-index: 999;
 }
 
-/*nav links beside each other instead of under each other*/
+/*nav links beside each other*/
 .navbar-nav {
   display: flex;
   list-style-type: none;
@@ -34,7 +30,7 @@ body {
   padding: 0; 
 }
 
-/*nav link*/
+/*nav link style*/
 .nav-link {
   display: block;
   color: #fff;
@@ -43,7 +39,7 @@ body {
   margin: 0 15px;
 }
 
-/*nav hover stripe*/
+/*nav hover style*/
 .nav-link:hover{
   text-decoration: underline;
 }
@@ -61,7 +57,7 @@ body {
   }
 }
 
-/*footer position*/
+/*footer position and width*/
 .footer {
   position: fixed;
   left: 0;
@@ -92,9 +88,8 @@ body {
 .contact {
   padding: 20px;
   background-color: rgb(81, 81, 81);
-  border-radius: 5px;
   max-width: 600px; /* Set a maximum width for the form */
-  font-family: fantasy;
+  font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   color: #ffffff;
   margin: 0 auto 20px; /* Center the form horizontally and add margin at the bottom */
 }
@@ -103,6 +98,7 @@ body {
 .text-contact label {
   display: block;
   color: #ffffff;
+  font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
 }
 
 /* Input and textarea style */
@@ -111,26 +107,21 @@ input[type=submit] {
   color: rgb(0, 0, 0);
   padding: 12px 40px;
   margin-top: -10px;
-  font-family: fantasy;
+  font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   border: none
 }
 
+/* submit hover color*/
 input[type=submit]:hover {
   background-color: #6C761C;
   color: #ffffff;
 }
 
+/*form space between title and text space*/
 input[type=text],
 select,
 textarea {
-  width: 100%;
+  width: 92.5%;
   padding: 12px;
   margin-top: 6px;
-}
-
-/* Responsive styles for mobile devices */
-@media (max-width: 767px) {
-  .contact {
-    width: 75%; /* Adjust the width as needed */
-  }
 }
