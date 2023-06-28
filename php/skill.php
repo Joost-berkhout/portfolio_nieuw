@@ -7,5 +7,7 @@
     <title>Skill</title>
 </head>
 <body>
+    
+<?php include "../php/components/footer/footer.php" ?>
 </body>
 </html>

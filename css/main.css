@@ -1,28 +1,40 @@
-/*background color*/
+/* background color */
 body {
   margin: 0;
   background: rgb(81, 81, 81);
+  overflow-x: hidden;
 }
 
-/*nav logo size*/
+/* nav for phone */
+@media (max-width: 768px) {
+  body {
+    padding-top: 11%;
+  }
+}
+
+/* nav logo size */
 .logo-img {
   max-width: 50px;
   height: auto;
 }
 
-/*nav color, size and alignment*/
+/* nav color, size and alignment */
 .navbar {
-  background-color: #6c761c;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  background-color: #6c761c;
   padding: 2%;
   box-sizing: border-box;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 9999;
 }
 
-/*nav links beside each other*/
+/* nav links beside each other */
 .navbar-nav {
   display: flex;
   list-style-type: none;
@@ -30,7 +42,7 @@ body {
   padding: 0; 
 }
 
-/*nav link style*/
+/* nav link style */
 .nav-link {
   display: block;
   color: #fff;
@@ -39,28 +51,28 @@ body {
   margin: 0 15px;
 }
 
-/*nav hover style*/
-.nav-link:hover{
+/* nav hover style */
+.nav-link:hover {
   text-decoration: underline;
 }
 
-/*nav for phone*/
+/* nav for phone */
 @media (max-width: 768px) {
   .navbar-nav {
     flex-wrap: nowrap;
     justify-content: center;
   }
-  /*header link size for phone*/ 
+  
+  /* header link size for phone */ 
   .nav-link {
     font-size: 4.5vw;
     text-align: center;
   }
 }
 
-/*footer position and width*/
+
 .footer {
-  position: fixed;
-  left: 0;
+  position: sticky;
   bottom: 0;
   width: 100%;
   background-color: rgb(108, 118, 28);
@@ -68,9 +80,9 @@ body {
   display: flex;
   justify-content: left;
   align-items: center;
+  z-index: 999;
 }
 
-/*footer link*/
 .footer a {
   color: rgb(255, 255, 255);
   text-decoration: dotted;
@@ -79,19 +91,49 @@ body {
   margin: 0 5px;
 }
 
-/*footer hover stripe*/
-.footer a:hover{
+.footer a:hover {
   text-decoration: underline;
+}
+
+.vertical-stripe {
+  width: 1px;
+  height: 15px;
+  background-color: rgb(255, 255, 255);
+  margin: 0 10px;
+}
+
+.phone-number,
+.gmail {
+  color: rgb(255, 255, 255);
+  font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Adjust the layout for phone */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .vertical-stripe {
+    display: none;
+  }
+
+  .phone-number,
+  .gmail {
+    margin-top: 5px;
+  }
 }
 
 /* Container for the contact form */
 .contact {
   padding: 20px;
   background-color: rgb(81, 81, 81);
-  max-width: 600px; /* Set a maximum width for the form */
+  max-width: 600px;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   color: #ffffff;
-  margin: 0 auto 20px; /* Center the form horizontally and add margin at the bottom */
+  margin: 0 auto 20px;
 }
 
 /* Text style for form labels */
@@ -108,16 +150,16 @@ input[type=submit] {
   padding: 12px 40px;
   margin-top: -10px;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
-  border: none
+  border: none;
 }
 
-/* submit hover color*/
+/* submit hover color */
 input[type=submit]:hover {
   background-color: #6C761C;
   color: #ffffff;
 }
 
-/*form space between title and text space*/
+/* form space between title and text space */
 input[type=text],
 select,
 textarea {

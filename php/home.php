@@ -7,5 +7,10 @@
     <title>Home</title>
 </head>
 <body>
+<div class="content-container">
+    <div class="contact">
+</div>
+</div>
+<?php include "../php/components/footer/footer.php" ?>
 </body>
 </html>

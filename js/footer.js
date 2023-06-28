@@ -1,18 +1,23 @@
-window.addEventListener("scroll", function() {
-  var footer = document.querySelector("footer");
-  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-  var windowHeight = window.innerHeight;
-  var documentHeight = Math.max(
-    document.body.scrollHeight,
-    document.body.offsetHeight,
-    document.documentElement.clientHeight,
-    document.documentElement.scrollHeight,
-    document.documentElement.offsetHeight
-  );
-
-  if (scrollPosition + windowHeight >= documentHeight) {
-    footer.classList.add("footer-visible");
-  } else {
-    footer.classList.remove("footer-visible");
+window.addEventListener('load', function() {
+    adjustContentMargin();
+  });
+  
+  window.addEventListener('resize', function() {
+    adjustContentMargin();
+  });
+  
+  function adjustContentMargin() {
+    var navbarHeight = document.querySelector('.navbar').offsetHeight;
+    var footerHeight = document.querySelector('.footer').offsetHeight;
+    var contentElement = document.querySelector('.content');
+    var windowHeight = window.innerHeight;
+  
+    // Calculate the available height for the content
+    var availableHeight = windowHeight - navbarHeight - footerHeight;
+  
+    // Adjust the margin and height of the content
+    contentElement.style.marginTop = navbarHeight + 'px';
+    contentElement.style.marginBottom = footerHeight + 'px';
+    contentElement.style.minHeight = availableHeight + 'px';
   }
-});
+  
