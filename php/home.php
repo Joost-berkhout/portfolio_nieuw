@@ -9,6 +9,7 @@
 <body>
 <div class="content">
     
+    
 </div>
 <?php include "../php/components/header/header.php" ?>
 </body>

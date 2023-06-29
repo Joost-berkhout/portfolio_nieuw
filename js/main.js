@@ -1,3 +1,18 @@
+//header
+window.addEventListener('load', function() {
+    adjustContentMargin();
+  });
+  
+  window.addEventListener('resize', function() {
+    adjustContentMargin();
+  });
+  
+  function adjustContentMargin() {
+    var navbarHeight = document.querySelector('.navbar').offsetHeight;
+    document.querySelector('.content').style.marginTop = navbarHeight + 'px';
+  }
+
+//footer
 window.addEventListener('load', function() {
     adjustContentMargin();
   });
@@ -20,4 +35,13 @@ window.addEventListener('load', function() {
     contentElement.style.marginBottom = footerHeight + 'px';
     contentElement.style.minHeight = availableHeight + 'px';
   }
-  
+
+//contact
+    // Check if the URL contains a success message parameter
+    const urlParams = new URLSearchParams(window.location.search);
+    const successMessage = urlParams.get('success');
+    
+    // Display the pop-up message if the parameter is present
+    if (successMessage) {
+        alert(successMessage);
+    }

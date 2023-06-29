@@ -28,5 +28,11 @@
 </div>
 
 <?php include "../php/components/header/header.php"; ?>
+
+<!-- Add the following script to show the pop-up message -->
+
+<script src="../js/main.js"></script>
+
+
 </body>
 </html>
