@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include "../php/components/header/header.php" ?>
     <title>Werk</title>
 </head>
 <body>
-
-<?php include "../php/components/footer/footer.php" ?>
+<div class="content">
+    
+</div>
+<?php include "../php/components/header/header.php" ?>
 </body>
 </html>

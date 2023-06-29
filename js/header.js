@@ -1,4 +1,3 @@
-// script.js
 
 window.addEventListener('load', function() {
   adjustContentMargin();

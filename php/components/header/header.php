@@ -7,7 +7,7 @@
     
 </head>
 <body>
-<div class="content">
+
     <nav class="navbar">
         <div class="logo-container">
             <?php
@@ -74,8 +74,8 @@
             ?>
         </div>
     </nav>
-</div>
 
+<?php include "../php/components/footer/footer.php" ?>
 <style><?php include "../css/main.css" ?></style>
 </body>
 </html>

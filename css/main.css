@@ -88,7 +88,7 @@ body {
   text-decoration: dotted;
   display: block;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
-  margin: 0 5px;
+  
 }
 
 .footer a:hover {
@@ -134,6 +134,13 @@ body {
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   color: #ffffff;
   margin: 0 auto 20px;
+}
+
+/* Adjust the layout for phone */
+@media (max-width: 768px) {
+  .contact {
+    margin-top: -10vh; /* Adjust the value as needed */
+  }
 }
 
 /* Text style for form labels */
