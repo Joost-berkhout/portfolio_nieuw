@@ -6,7 +6,6 @@
     <title>Contact</title>
 </head>
 <body>
-    
 <div class="content">
     <div class="contact">
         <form action="../php/backend/contact_backend.php" method="POST">
@@ -28,11 +27,5 @@
 </div>
 
 <?php include "../php/components/header/header.php"; ?>
-
-<!-- Add the following script to show the pop-up message -->
-
-<script src="../js/main.js"></script>
-
-
 </body>
 </html>

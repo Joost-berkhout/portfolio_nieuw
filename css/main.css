@@ -96,14 +96,17 @@ body {
 }
 
 .vertical-stripe {
-  width: 1px;
-  height: 15px;
+  width: 5px;
+  height: 5px;
   background-color: rgb(255, 255, 255);
   margin: 0 10px;
+  align-items: center;
+  border-radius: 100%;
 }
 
 .phone-number,
-.gmail {
+.email {
+  margin: 0; /* Remove the margin */
   color: rgb(255, 255, 255);
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
 }
@@ -121,7 +124,7 @@ body {
   }
 
   .phone-number,
-  .gmail {
+  .email {
     margin-top: 5px;
   }
 }
@@ -155,7 +158,7 @@ input[type=submit] {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
   padding: 12px 40px;
-  margin-top: -10px;
+  
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   border: none;
 }

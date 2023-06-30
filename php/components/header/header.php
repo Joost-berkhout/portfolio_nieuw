@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../js/main.js"></script>
+    
     
 </head>
 <body>
@@ -79,5 +79,6 @@
 
 <?php include "../php/components/footer/footer.php" ?>
 <style><?php include "../css/main.css" ?></style>
+<script src="../js/main.js"></script>
 </body>
 </html>
