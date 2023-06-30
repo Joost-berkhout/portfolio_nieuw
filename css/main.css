@@ -136,7 +136,8 @@ body {
   max-width: 600px;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   color: #ffffff;
-  margin: 0 auto 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Adjust the layout for phone */
@@ -157,8 +158,7 @@ body {
 input[type=submit] {
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  padding: 12px 40px;
-  
+  padding: 10px 40px;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   border: none;
 }
@@ -173,7 +173,20 @@ input[type=submit]:hover {
 input[type=text],
 select,
 textarea {
-  width: 92.5%;
-  padding: 12px;
+  width: 99%;
+  padding-top: 12px;
+  padding-bottom: 12px;
   margin-top: 6px;
+}
+
+/* Adjust the layout for phone */
+@media (max-width: 768px) {
+  input[type=text],
+  select,
+  textarea {
+    width: 99%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-top: 6px;
+  }
 }
