@@ -24,6 +24,7 @@
             $row = $result->fetch_assoc();
             $imageData = $row['img'];
 
+            echo '<a href="../php/home.php">';
             echo '<div class="logo">';
             echo '<img class="logo-img" src="data:image/png;base64,' . base64_encode($imageData) . '" alt="ID1 Image">';
             echo '</div>';
@@ -63,6 +64,7 @@
             $row2 = $result2->fetch_assoc();
             $imageData2 = $row2['img'];
 
+            echo '<a href="../php/home.php">';
             echo '<div class="logo">';
             echo '<img class="logo-img" src="data:image/png;base64,' . base64_encode($imageData2) . '" alt="ID1 Image">';
             echo '</div>';
