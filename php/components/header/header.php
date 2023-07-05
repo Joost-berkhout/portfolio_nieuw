@@ -7,21 +7,22 @@
 <body>
 
 <nav class="navbar">
+    <!--logo-->
     <div class="logo-container">
             <img class="logo-img" src="..\img\logo-small.png">
     </div>
-        
+    <!--links-->
     <ul class="navbar-nav">
         <li class="nav-item"><a class="nav-link" href="../php/werk.php">WERK</a></li>
         <li class="nav-item"><a class="nav-link" href="../php/home.php">HOME</a></li>
         <li class="nav-item"><a class="nav-link" href="../php/skill.php">SKILL</a></li>
     </ul>
-        
+    <!--logo--> 
     <div class="logo-container">
             <img class="logo-img" src="..\img\logo-small.png">
     </div>
 </nav>
-
+<!--include footer/javascript/style-->
 <?php include "../php/components/footer/footer.php" ?>
 <style><?php include "../css/main.css" ?></style>
 <script src="../js/main.js"></script>

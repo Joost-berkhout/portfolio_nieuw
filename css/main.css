@@ -7,18 +7,23 @@ body {
 
 /* nav for phone */
 @media (max-width: 768px) {
-  body {
-    padding-top: 11%;
+  .navbar-nav {
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+  
+  /* header link size for phone */ 
+  .nav-link {
+    font-size: 4.5vw;
+    text-align: center;
   }
 }
-
 /* nav logo size */
 .logo-img {
   max-width: 50px;
   height: auto;
 }
-
-/* nav color, size and alignment */
+/* nav color/size/alignment */
 .navbar {
   position: fixed;
   top: 0;
@@ -33,7 +38,6 @@ body {
   align-items: center;
   z-index: 9999;
 }
-
 /* nav links beside each other */
 .navbar-nav {
   display: flex;
@@ -41,7 +45,6 @@ body {
   margin: 0;
   padding: 0; 
 }
-
 /* nav link style */
 .nav-link {
   display: block;
@@ -50,27 +53,12 @@ body {
   font-size: 3vw;
   margin: 0 15px;
 }
-
 /* nav hover style */
 .nav-link:hover {
   text-decoration: underline;
 }
 
-/* nav for phone */
-@media (max-width: 768px) {
-  .navbar-nav {
-    flex-wrap: nowrap;
-    justify-content: center;
-  }
-  
-  /* header link size for phone */ 
-  .nav-link {
-    font-size: 4.5vw;
-    text-align: center;
-  }
-}
-
-
+/*footer position/with/color*/
 .footer {
   position: sticky;
   bottom: 0;
@@ -83,6 +71,7 @@ body {
   z-index: 999;
 }
 
+/*footer link color/font*/
 .footer a {
   color: rgb(255, 255, 255);
   text-decoration: dotted;
@@ -90,12 +79,12 @@ body {
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   
 }
-
+/*footer hover mark*/
 .footer a:hover {
   text-decoration: underline;
 }
-
-.vertical-stripe {
+/*dot inbetween footer links*/
+.dot {
   width: 5px;
   height: 5px;
   background-color: rgb(255, 255, 255);
@@ -103,33 +92,20 @@ body {
   align-items: center;
   border-radius: 100%;
 }
-
-.phone-number,
-.email {
-  margin: 0; /* Remove the margin */
-  color: rgb(255, 255, 255);
-  font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
-}
-
-/* Adjust the layout for phone */
+/* Adjust the footer layout for phone */
 @media (max-width: 768px) {
   .footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-
-  .vertical-stripe {
+  /*removes dot for phone*/
+  .dot {
     display: none;
-  }
-
-  .phone-number,
-  .email {
-    margin-top: 5px;
   }
 }
 
-/* Container for the contact form */
+/*contact form color/size/font/position/padding*/
 .contact {
   padding: 20px;
   background-color: rgb(81, 81, 81);
@@ -139,54 +115,39 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
-/* Adjust the layout for phone */
-@media (max-width: 768px) {
-  .contact {
-    margin-top: -10vh; /* Adjust the value as needed */
-  }
-}
-
-/* Text style for form labels */
+/*labels for the text area's*/
 .text-contact label {
   display: block;
   color: #ffffff;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
 }
-
-/* Input and textarea style */
+/*make submit button look good*/
 input[type=submit] {
+  /*submit button colors*/
   background-color: #ffffff;
   color: rgb(0, 0, 0);
+  /*makes the button bigger*/
   padding: 10px 40px;
+  /*submit button font*/
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   border: none;
 }
-
-/* submit hover color */
+/* submit button hover color */
 input[type=submit]:hover {
   background-color: #6C761C;
   color: #ffffff;
 }
-
-/* form space between title and text space */
-input[type=text],
-select,
-textarea {
-  width: 99%;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  margin-top: 6px;
-}
-
-/* Adjust the layout for phone */
+/* Adjust the contact form layout for phone */
 @media (max-width: 768px) {
   input[type=text],
   select,
   textarea {
+    /*width of the form*/
     width: 99%;
+    /*adding padding on top and bottom*/
     padding-top: 12px;
     padding-bottom: 12px;
+    /*keeps contact form out of the v=navbar*/
     margin-top: 6px;
   }
 }
