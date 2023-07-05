@@ -115,27 +115,36 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-/*labels for the text area's*/
+/* Text style for form labels */
 .text-contact label {
   display: block;
   color: #ffffff;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
 }
-/*make submit button look good*/
+/* make submit button look good */
 input[type=submit] {
-  /*submit button colors*/
   background-color: #ffffff;
   color: rgb(0, 0, 0);
-  /*makes the button bigger*/
   padding: 10px 40px;
-  /*submit button font*/
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   border: none;
 }
-/* submit button hover color */
+/* submit hover color */
 input[type=submit]:hover {
   background-color: #6C761C;
   color: #ffffff;
+}
+/* contact form layout for desktop */
+input[type=text],
+select,
+textarea {
+    /*width of the form*/
+    width: 99%;
+    /*adding padding on top and bottom*/
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /*keeps contact form out of the v=navbar*/
+    margin-top: 6px;
 }
 /* Adjust the contact form layout for phone */
 @media (max-width: 768px) {
