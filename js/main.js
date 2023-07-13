@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
     document.querySelector('.content').style.marginTop = navbarHeight + 'px';
   }
 
-//footer
+//footer under page
 window.addEventListener('load', function() {
     adjustContentMargin();
   });

@@ -9,7 +9,9 @@
 <nav class="navbar">
     <!--logo-->
     <div class="logo-container">
+        <a href="../php/home.php">
             <img class="logo-img" src="..\img\logo-small.png">
+        </a>
     </div>
     <!--links-->
     <ul class="navbar-nav">
@@ -19,12 +21,13 @@
     </ul>
     <!--logo--> 
     <div class="logo-container">
+        <a href="../php/home.php">
             <img class="logo-img" src="..\img\logo-small.png">
+        </a>
     </div>
 </nav>
 <!--include footer/javascript/style-->
 <?php include "../php/components/footer/footer.php" ?>
 <style><?php include "../css/main.css" ?></style>
-<script src="../js/main.js"></script>
 </body>
 </html>

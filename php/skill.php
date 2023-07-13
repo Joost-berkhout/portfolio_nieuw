@@ -7,7 +7,22 @@
 </head>
 <body>
 <div class="content">
-    
+
+
+
+        <div class="skill-container">
+            <div class="skills html">
+                <p class="skill-label">HTML</p>
+                65%
+            </div>
+            <div class="skills css">
+                <p class="skill-label">CSS</p>
+                75%
+            </div>
+        </div>
+
+
+</div>
 </div>
 <?php include "../php/components/header/header.php" ?>
 </body>
