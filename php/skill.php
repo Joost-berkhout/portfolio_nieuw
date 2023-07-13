@@ -15,6 +15,9 @@
                 <p class="skill-label">HTML</p>
                 65%
             </div>
+        </div>
+
+        <div class="skill-container">
             <div class="skills css">
                 <p class="skill-label">CSS</p>
                 75%
