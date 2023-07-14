@@ -108,26 +108,26 @@ body {
 /*contact form color/size/font/position/padding*/
 .contact {
   padding: 20px;
-  background-color: rgb(81, 81, 81);
   max-width: 600px;
   font-family: sans-serif;
-  color: #ffffff;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
 }
 /* Text style for form labels */
 .text-contact label {
   display: block;
-  color: #ffffff;
+  color: #000000;
   font-family: sans-serif;
 }
 /* make submit button look good */
 input[type=submit] {
-  background-color: #ffffff;
+  background-color: #ddd;
   color: rgb(0, 0, 0);
   padding: 10px 40px;
   font-family: sans-serif, Impact, 'Arial Narrow Bold', sans-serif;
   border: none;
+  border-radius: 25px;
 }
 /* submit hover color */
 input[type=submit]:hover {
@@ -145,6 +145,15 @@ textarea {
     padding-bottom: 12px;
     /*keeps contact form out of the v=navbar*/
     margin-top: 6px;
+}
+/* Column color */
+.contact [type="text"],
+.contact select,
+.contact textarea {
+  background-color: #ddd;
+  color: #000000;
+  border: none;
+  border-radius: 25px;
 }
 /* Adjust the contact form layout for phone */
 @media (max-width: 768px) {
@@ -205,7 +214,7 @@ textarea {
 
 /* All skill content position/title's */
 .skill {
-  margin-top: 10%;
+  margin-top: 5%;
   font-family: sans-serif;
 }
 /* title's*/
@@ -276,7 +285,60 @@ textarea {
   width: 75%;
   background-color: #6c761c;
 }
+/* bar % samenwerken */
+.samenwerken {
+  width: 80%;
+  background-color: #6c761c;
+}
+/* bar % plannen & organiseren */
+.plannen {
+  width: 70%;
+  background-color: #6c761c;
+}
+/* bar % afspraken nakomen */
+.afspraken {
+  width: 90%;
+  background-color: #6c761c;
+}
+/* bar % takenverdeling */
+.takenverdeling {
+  width: 80%;
+  background-color: #6c761c;
+}
+/* bar % oplevering */
+.oplevering {
+  width: 85%;
+  background-color: #6c761c;
+}
+/* bar % feedback */
+.feedback {
+  width: 80%;
+  background-color: #6c761c;
+}
 
+/* bar % doorzettingsvermogen */
+.doorzettingsvermogen {
+  width: 95%;
+  background-color: #6c761c;
+}
+/* bar % leergierig */
+.leergierig {
+  width: 85%;
+  background-color: #6c761c;
+}
+/* bar % sociaal */
+.sociaal {
+  width: 80%;
+  background-color: #6c761c;
+}
+/* bar % positief */
+.positief {
+  width: 95%;
+  background-color: #6c761c;
+}
+
+
+/* skill page for phone */
 @media (max-width: 768px){ 
 .skill{
   margin-top: 20%;
