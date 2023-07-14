@@ -277,7 +277,7 @@ textarea {
 }
 /* bar % javascript */
 .javascript {
-  width: 40%;
+  width: 30%;
   background-color: #6c761c;
 }
 /* bar % mysql */
@@ -327,7 +327,7 @@ textarea {
 }
 /* bar % doorzettingsvermogen */
 .doorzettingsvermogen {
-  width: 95%;
+  width: 90%;
   background-color: #6c761c;
 }
 /* bar % leergierig */
@@ -342,7 +342,7 @@ textarea {
 }
 /* bar % positief */
 .positief {
-  width: 95%;
+  width: 85%;
   background-color: #6c761c;
 }
 

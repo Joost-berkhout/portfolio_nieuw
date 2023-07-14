@@ -34,7 +34,7 @@
         <div class="skill-container">
             <div class="skills javascript">
                 <p class="skill-label">Javascript</p>
-                40%
+                30%
             </div>
         </div>
 
@@ -112,14 +112,14 @@
         <div class="skill-container">
             <div class="skills doorzettingsvermogen">
                 <p class="skill-label">Doorzettingsvermogen</p>
-                95%
+                90%
             </div>
         </div>
 
         <div class="skill-container">
             <div class="skills positief">
                 <p class="skill-label">Positief</p>
-                95%
+                85%
             </div>
         </div>
 
