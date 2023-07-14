@@ -16,7 +16,7 @@
         </span>  
 
         <span class="text-werk">    
-        <a href="../projects\simple.php">Webshop</a>
+        <a href="../projects\webshop.php">Webshop</a>
         <br>
         </span>  
     </div>
