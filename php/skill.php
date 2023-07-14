@@ -117,6 +117,14 @@
         </div>
 
         <div class="skill-container">
+            <div class="skills positief">
+                <p class="skill-label">Positief</p>
+                95%
+            </div>
+        </div>
+
+
+        <div class="skill-container">
             <div class="skills leergierig">
                 <p class="skill-label">Leergierig</p>
                 85%
@@ -130,12 +138,6 @@
             </div>
         </div>
 
-        <div class="skill-container">
-            <div class="skills positief">
-                <p class="skill-label">Positief</p>
-                95%
-            </div>
-        </div>
 
     </div>
 
