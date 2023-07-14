@@ -12,7 +12,12 @@
     
         <span class="text-werk">    
         <a href="../projects\simple.php">Simple (Unity game)</a>
+        <a href="../projects\simple(mobile).php">Simple(mobile) (Unity game)</a>
+        </span>  
 
+        <span class="text-werk">    
+        <a href="../projects\simple.php">Webshop</a>
+        <br>
         </span>  
     </div>
     
