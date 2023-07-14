@@ -1,7 +1,7 @@
 /* background color */
 body {
   margin: 0;
-  background: rgb(81, 81, 81);
+  background-image: radial-gradient(white);
   overflow-x: hidden;
 }
 
@@ -182,7 +182,7 @@ textarea {
   justify-content: space-between;
   margin-left: 10%;
   font-size: 150%;
-  color: #fff;
+  color: #000000;
   font-family: sans-serif;
   line-height: 5; /* Adjust the line-height value as needed */
 }
@@ -203,41 +203,82 @@ textarea {
   }
 }
 
-
-
+/* All skill content position/title's */
+.skill {
+  margin-top: 10%;
+  font-family: sans-serif;
+}
+/* title's*/
+.skill-title{
+  text-align: center;
+}
+/* Seperate rows background-color/font/ */
 .skill-container {
   width: 80%;
-  background-color: #ffffff;
+  background-color: #ddd;
   margin: 0 auto;
   position: relative;
 }
-
+/* bar text/padding/margin/text position */
 .skills {
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
+  color: #ffffff;
   position: relative;
   z-index: 1;
-  margin-bottom: 10px; /* Add some margin between bars */
+  margin-bottom: 1%; /* Add some margin between bars */
 }
-
-.html {
-  width: 65%;
+/* label podition/color */
+.skill-label {
+  position: absolute;
+  text-align: left;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%); /* Vertically align the label */
+  padding-left: 1%;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: rgb(255, 255, 255);
+}
+/* bar % php */
+.php {
+  width: 70%;
   background-color: #6c761c;
 }
-
+/* bar % html */
+.html {
+  width: 70%;
+  background-color: #6c761c;
+}
+/* bar % css */
 .css {
   width: 75%;
   background-color: #6c761c;
 }
+/* bar % javascript */
+.javascript {
+  width: 40%;
+  background-color: #6c761c;
+}
+/* bar % mysql */
+.mysql {
+  width: 65%;
+  background-color: #6c761c;
+}
+/* bar % python */
+.python {
+  width: 70%;
+  background-color: #6c761c;
+}
+/* bar % c# */
+.csharp {
+  width: 75%;
+  background-color: #6c761c;
+}
 
-.skill-label {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  padding-left: 10px;
-  color: white;
+@media (max-width: 768px){ 
+.skill{
+  margin-top: 20%;
+}
 }
