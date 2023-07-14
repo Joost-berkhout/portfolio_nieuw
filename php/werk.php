@@ -7,6 +7,14 @@
 </head>
 <body>
 <div class="content">
+    	<p class="werk-title">Projecten</p>
+    <div class="werk-content">
+    
+        <span class="text-werk">    
+        <a href="../projects\simple.php">Simple (Unity game)</a>
+
+        </span>  
+    </div>
     
 </div>
 <?php include "../php/components/header/header.php" ?>

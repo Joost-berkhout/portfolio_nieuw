@@ -1,4 +1,4 @@
-<script src="../js/main.js"></script>
+
 <div>
     <footer class="footer">
     <!--contact link in the footer-->

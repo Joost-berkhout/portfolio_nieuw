@@ -27,7 +27,8 @@
     </div>
 </nav>
 <!--include footer/javascript/style-->
-<?php include "../php/components/footer/footer.php" ?>
+<?php include __DIR__ . "/../footer/footer.php"; ?>
+<script src="../js/main.js"></script>
 <style><?php include "../css/main.css" ?></style>
 </body>
 </html>

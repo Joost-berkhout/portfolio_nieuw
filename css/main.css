@@ -185,7 +185,7 @@ textarea {
   
 }
 /* adjust text in home page color/size/font/position/padding */
-.text {
+.text-home {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -203,7 +203,7 @@ textarea {
     align-items: center;
   }
   /* adjust text in home page (mobile) color/size/font/position/padding/border */
-  .text {
+  .text-home {
     margin-left: 0;
     margin-top: 10px;
     line-height: 1.5; /* Adjust the line-height value as needed */
@@ -213,6 +213,7 @@ textarea {
     background-color: #00000000;
   }
 }
+
 
 /* All skill colom margin-top/font */
 .skill {
@@ -264,7 +265,6 @@ textarea {
   width: 70%;
   background-color: #6c761c;
 }
-
 /* bar % html */
 .html {
   width: 70%;
@@ -325,7 +325,6 @@ textarea {
   width: 80%;
   background-color: #6c761c;
 }
-
 /* bar % doorzettingsvermogen */
 .doorzettingsvermogen {
   width: 95%;
@@ -345,4 +344,94 @@ textarea {
 .positief {
   width: 95%;
   background-color: #6c761c;
+}
+
+/* werk page size/position/block */
+.werk-content {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+/* adjust text in home page color/size/font/position/padding */
+.text-werk {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 150%;
+  font-family: sans-serif;
+  line-height: 5; /* Adjust the line-height value as needed */
+  background-color: #ddd;
+  border-radius: 25px;
+}
+/* title*/
+.werk-title{
+  text-align: center;
+  margin-top: 10%;
+  font-family: sans-serif;
+  font-size: 150%;
+}
+@media (max-width: 768px) {
+
+  /* adjust text in home page (mobile) color/size/font/position/padding/border */
+  .text-werk {
+    margin-left: 0;
+    margin-top: 10px;
+    line-height: 1.5; /* Adjust the line-height value as needed */
+    border: 4px solid #6c761c;
+    font-size: 100%;
+    border-radius: 0px;
+    background-color: #00000000;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.project-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.video {
+  width: 70%;
+  height: 500px;
+  margin: 2% auto;
+  border-radius: 25px;
+}
+
+.text-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2% auto;
+  font-size: 100%;
+  font-family: sans-serif;
+  background-color: #ddd;
+  width: 70%;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .text-project {
+    margin: 10px auto;
+    line-height: 1.5;
+    border: 4px solid #6c761c;
+    font-size: 100%;
+    border-radius: 0px;
+    background-color: transparent;
+    width: 80%;
+    margin-top: 10px;
+  }
+
+  .video {
+    width: 80%;
+    height: 270px;
+    margin: 10px auto;
+    border: 4px solid #6c761c;
+    border-radius: 0px;
+  }
 }

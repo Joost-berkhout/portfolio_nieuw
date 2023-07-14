@@ -10,7 +10,7 @@
 
     <div class="home-content">
         <img class="portrait" src="..\img\portrait.png">
-        <span class="text">    
+        <span class="text-home">    
         -Naam: Joost Berkhout<br>
         -Woonplaats: Burgerbrug<br>
         -Geboortedatum: 06-03-2006<br>
