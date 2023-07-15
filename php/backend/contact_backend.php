@@ -23,8 +23,9 @@
 
         if ($conn->query($sql) === true) {
             // Success message
-            echo "<script>alert('Message sent successfully!')</script>";
             header("refresh:0;url=../contact.php");
+            echo "<script>alert('Message sent successfully!')</script>";
+            
         } else {
             echo "ERROR: Sorry, there was an issue with sending your message: " . $conn->error;
         }
