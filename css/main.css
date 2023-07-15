@@ -405,6 +405,10 @@ textarea {
     margin-left: auto;
     margin-right: auto;
   }
+  .javascript {
+    width: 40%;
+    background-color: #6c761c;
+  }
 }
 
 /* Add margin between columns */
