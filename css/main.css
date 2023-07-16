@@ -409,6 +409,9 @@ textarea {
     width: 40%;
     background-color: #6c761c;
   }
+  .werk-content{
+    width: 80%;
+  }
 }
 
 /* Add margin between columns */
